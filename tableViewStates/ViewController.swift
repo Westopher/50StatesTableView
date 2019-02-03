@@ -75,7 +75,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "hello world"
+        print("The states array at the index path of \(indexPath.row) is \(states[indexPath.row])")
+        cell.textLabel?.text = states[indexPath.row]
         return cell
     }
     
